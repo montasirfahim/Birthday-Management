@@ -160,13 +160,17 @@ public class BirthdayManagement extends Application {
         btnBackFromSearch.setOnAction(this::actionPerformed);
 
         resultTable = new TableView<>();
-        TableColumn<Classmate, String> nameCol = new TableColumn<>("নাম");
+
+        TableColumn<Classmate, String> idCol = new TableColumn<>("ID");
+        idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
+
+        TableColumn<Classmate, String> nameCol = new TableColumn<>("Name");
         nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
 
-        TableColumn<Classmate, LocalDate> dateCol = new TableColumn<>("জন্ম তারিখ");
+        TableColumn<Classmate, LocalDate> dateCol = new TableColumn<>("Birthdate");
         dateCol.setCellValueFactory(new PropertyValueFactory<>("birthdate"));
 
-        resultTable.getColumns().addAll(nameCol, dateCol);
+        resultTable.getColumns().addAll(idCol, nameCol, dateCol);
         resultTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
 
         searchPane = new VBox(10, lblSearch, tfSearch, btnSearchSubmit, resultTable, btnBackFromSearch);
