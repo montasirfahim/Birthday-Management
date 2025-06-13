@@ -4,7 +4,7 @@ A desktop application built using **JavaFX** and **MySQL** to manage and store c
 
 ---
 
-## ✨ Features
+## Features
 
 - Add / Update / Delete entries
 - View upcoming birthdays
@@ -12,7 +12,7 @@ A desktop application built using **JavaFX** and **MySQL** to manage and store c
 - Daily birthday notifications
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - **JavaFX** (UI)
 - **Java JDBC** (Database connectivity)
@@ -21,9 +21,9 @@ A desktop application built using **JavaFX** and **MySQL** to manage and store c
 
 ---
 
-## 📦 How to Clone and Run
+## How to Clone and Run
 
-### 1️⃣ Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/montasirfahim/Birthday-Management
